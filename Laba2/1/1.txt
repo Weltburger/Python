@@ -1,0 +1,16 @@
+English text:
+Simplified Chinese has become the largest language demographic 
+on Steam, according to the results of Valve's December 2019 Steam 
+Hardware and Software survey. Each month, this optional survey 
+collects basic system configuration data on a portion of Steam's 
+90 million monthly active users ranging from what CPU they're using 
+to how much free space players have on their hard drive. This survey 
+also collects data on what language users have their Steam client set 
+to, and, until now, English was the dominant choice, typically 
+representing around 30 to 40 percent of users. 
+
+Русский текст:
+По данным канадского источника агентства, 
+после вылета из аэропорта у лайнера произошел перегрев одного двигателя. 
+Напомним, в ночь на 8 января вскоре после взлета из Тегерана (Иран) 
+самолет украинской компании МАУ, Boeing 737, потерпел крушение.
