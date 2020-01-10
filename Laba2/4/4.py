@@ -3,12 +3,12 @@ import re
 
 def find_match(text):
     for i in range(len(text)):
-        pattern = re.compile(r'([a-z]{1,}:) (int|short|byte) ([0-9]{1,})')
+        pattern = re.compile(r'[a-z]{1,}: (?:int|short|byte) \[[0-9]{1,}\]')
         result = pattern.findall(text[i])
         searchForResult = pattern.search(text[i])
         if searchForResult is not None:
             print(type(result))
-            print('Строка ', i, ', Позиция ', searchForResult.span(), ' найдено : ', result)
+            print('Строка ', i, ', Позиция ', searchForResult.span(), " найдено : '{}'".format(result[0]))
 
 
 def fopen(pathToFile):
