@@ -1,0 +1,29 @@
+- Chrome
+- KeePass
+- Discord
+- Steam
+- Uplay
+- Origin
+- BattleNet
+- Streamlabs OBS
+- Adobe PS CC
+- Adobe Illustrator
+- Adobe Premiere Pro
+- Adobe After Effects
+- GeForce Experience
+- MSI Afterburner
+- RivaTuner
+- Unity
+- Unreal Engine
+- VSCode
+- PHPStorm
+- PYCharm
+- Visual Studio
+- Sublime Text
+- SFM
+- Blender
+- ZBrush
+- Maya
+- 3DSMAX
+- Drivers
+- Other Useful Programms
