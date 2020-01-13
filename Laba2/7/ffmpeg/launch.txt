@@ -1,0 +1,1 @@
+python 7.py --source "H:\0Универ\Python\Laba2\7\MyMusic" --destination "H:\0Универ\Python\Laba2\7\Done" --count 3 --frame 15 -l -e
