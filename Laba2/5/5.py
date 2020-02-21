@@ -4,7 +4,7 @@ import re
 def SplitLine(text):
     splitText = text.split(' ')
     for i in range(len(splitText)):
-        pattern = re.compile('[A-Z]{1}[a-z]+\d{4}|[A-Z]{1}[a-z]+\d{2}')
+        pattern = re.compile('[A-Z]{1}[a-z]+\d{4}$|[A-Z]{1}[a-z]+\d{2}$')
         result = pattern.findall(splitText[i])
         if result is not None:
             print(result)

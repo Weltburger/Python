@@ -7,8 +7,8 @@ while 1:
 
     try:
         strCard = str(arr[0]) + str(arr[1]) + str(arr[2]) + str(arr[3])
-        for i in range(len(arr)):
-            if not 5 > len(str(arr[i])) > 3:
+        for i in arr:
+            if not 5 > len(str(i)) > 3:
                 raise Warning
     except (Warning, IndexError):
         print('Номер карты введен некорректно')

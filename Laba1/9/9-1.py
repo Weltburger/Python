@@ -14,5 +14,6 @@ def Foo():
     print(sum([k * v for k, v in zip(res.keys(), res.values())]))
     print(res)
 
+
 if __name__ == "__main__":
     Foo()

@@ -6,7 +6,6 @@ import subprocess
 
 
 def main():
-
     m = argparse.ArgumentParser(description="Trackmix", epilog="Good listening!")
     m.add_argument('--source', '-s', type=str, required=True, help='Source')
     m.add_argument('--destination', '-d', type=str, default=None, help='Output')
@@ -36,7 +35,8 @@ def main():
     justForFade = frame - 2
     justForFade = str(justForFade)
     if fade is True:
-        fadeStr = ' -ss 00:00:00 -t 00:00:' + str(frame) + '.00 -af \"afade=t=in:ss=0:d=2,afade=t=out:st=' + justForFade + ':d=2"\' -y '
+        fadeStr = ' -ss 00:00:00 -t 00:00:' + str(
+            frame) + '.00 -af \"afade=t=in:ss=0:d=2,afade=t=out:st=' + justForFade + ':d=2"\' -y '
         fadeStr = str(fadeStr)
     else:
         fadeStr = ''
@@ -85,14 +85,16 @@ def main():
         file_info = open(r'' + destination + '/123.txt', 'w')
         file_info.writelines(fname)
         file_info.close()
-        subprocess.call(path_to_ffmpeg + ' -f concat -i ' + destination + '/123.txt' + ' -c copy ' + 'mix.mp3' + '', shell=True)
+        subprocess.call(path_to_ffmpeg + ' -f concat -i ' + destination + '/123.txt' + ' -c copy ' + 'mix.mp3' + '',
+                        shell=True)
 
         for the_file in os.listdir(destination):
             file_path = os.path.join(destination, the_file)
             try:
                 if os.path.isfile(file_path):
                     os.unlink(file_path)
-                # elif os.path.isdir(file_path): shutil.rmtree(file_path)
+                elif os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
             except Exception as e:
                 print(e)
 
