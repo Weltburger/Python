@@ -58,7 +58,8 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.logMenu.menuAction())
 
         self.retranslateUi(MainWindow)
-        self.openMenuItem.triggered.connect(MainWindow.close)
+        # self.openMenuItem.triggered.connect(MainWindow.close)
+        self.openMenuItem.triggered.connect(MainWindow.open_file)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
