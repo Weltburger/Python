@@ -5,7 +5,7 @@ import argparse
 import MusGenres
 
 
-# Call example: 1.py D:/Учеба/Python/git-lab1/Python-lab4/task1/Test_Music/ -d -g 7
+# Call example: 1.py H:\0Универ\Python\Laba4\1\Test_Music -d -g 7
 class Tag(object):
     def __init__(self, unpacked_tag):
         (title, artist, album, year, comment, zero_byte, track, genre) = unpacked_tag
@@ -48,9 +48,7 @@ class TagReader(object):
                 self.tags.append((tag))
 
     def __get_files(self):
-        return (join(self.__dir, item)
-                for item in listdir(self.__dir)
-                if isfile(join(self.__dir, item)))
+        return (join(self.__dir, item) for item in listdir(self.__dir) if isfile(join(self.__dir, item)))
 
     def __open_file(self, file):
         with open(file, "rb+") as bfile:
@@ -135,7 +133,3 @@ if __name__ == '__main__':
             print('{}\n'.format(' - '.join((tag.artist,
                                             tag.title,
                                             tag.album))))
-'''ToDo: write tag
-class TagWriter(object):
-    def __init__
-    '''

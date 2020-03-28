@@ -112,9 +112,7 @@ class DB(object):
                 # проверяем, существует ли запись
                 # с таким набором значений в таблице
                 # если существует, идём дальше
-                if (self.session.query(exists()
-                                       .where(comparator))
-                                .scalar()):
+                if (self.session.query(exists().where(comparator)).scalar()):
                     continue
 
                 # создаем элемент таблицы
@@ -131,8 +129,7 @@ class DB(object):
 
         # заполняем таблицы с помощью созданного ранее замыкания
         fill_table(authors, Author, ['name', 'country', 'years'])
-        fill_table(books, Book, ['author_id', 'title', 'pages_count',
-                                 'publisher', 'publishing_year'])
+        fill_table(books, Book, ['author_id', 'title', 'pages_count', 'publisher', 'publishing_year'])
         fill_table(users, User, ['login', 'password'])
 
     def read_authors(self):
